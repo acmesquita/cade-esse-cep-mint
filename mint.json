@@ -1,0 +1,13 @@
+{
+  "name": "poc-mint-cade-esse-cep",
+  "application": {
+    "head": "assets/head.html",
+    "title": "poc-mint-cade-esse-cep"
+  },
+  "source-directories": [
+    "source"
+  ],
+  "test-directories": [
+    "tests"
+  ]
+}
