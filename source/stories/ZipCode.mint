@@ -9,12 +9,6 @@ store ZipCode {
       |> ValidateZipCode.lenght
       |> findAddressBy
   }
-  
-  fun updateAddress(param : Tuple(String, String)): Promise(Never, Void) {
-    case(param) {
-      {status, msg } => if(status == "ok") { next { address = msg} } else { next { error = msg } }
-    }
-  }
 
   fun cleanError : Promise(Never, Void)  {
     next { error = "" }
