@@ -1,5 +1,5 @@
 component Show {
-  connect ZipCode exposing { address }
+  connect ZipCode exposing { address, error }
 
   fun render : Html {
     <>
