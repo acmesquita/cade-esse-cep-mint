@@ -1,19 +1,13 @@
 component Main {
-  style base {
-    font-family: sans;
-    font-weight: bold;
-    font-size: 50px;
-
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    height: 100vh;
-    width: 100vw;
-  }
+  connect Application exposing { page }
 
   fun render : Html {
-    <div::base>
-      <{ "Hello Mint!" }>
-    </div>
+    <>
+      case (page) {
+        Page::NotFound => <div>"404"</div>
+        Page::Home => <Home />
+        Page::Show => <Show />
+      }
+    </>
   }
 }
