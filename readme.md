@@ -19,7 +19,7 @@ Por se tratar de uma linguagem de programação, é necessário que estaja confi
 ```
 ### Iniciar a aplicação
 
-```bash
+```
   mint build  ---> Instalar as dependencias do projeto
   mint start  ---> Iniciar a aplicalção na porta 3000
 ```
